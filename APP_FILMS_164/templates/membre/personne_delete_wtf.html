@@ -5,16 +5,16 @@
 	<div class="row">
 		<div class="col-md-12">
 			<p>
-				Effacer un Mail
+				Effacer un Membre
 			</p>
 			<form action="" method="POST" novalidate>
 				<!-- Protection contre les attaques Cross-Site Request Forgery (CSRF) -->
 				{{ form_delete.hidden_tag() }}
 				<table class="table table-bordered table-sm">
 					{% if data_films_associes %}
-						<h3>Ce mail apartiens a la personne suivante :</h3>
+						<h3>Cette personne est associer a :</h3>
 					{% else %}
-						<h3>Ce mail à effacer n'est associé à aucune personne.</h3>
+						<h3>Cette personne n'est associer a aucune adresse :</h3>
 					{% endif %}
 					{% if data_films_associes %}
 						<thead>

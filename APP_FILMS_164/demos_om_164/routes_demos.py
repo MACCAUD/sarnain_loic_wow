@@ -12,7 +12,7 @@ from APP_FILMS_164.erreurs.exceptions import *
 
 @app.route('/index')
 def index():
-    return "Hello, le MONDE du Module 164 !"
+    return "J'en ai marre du Module 164 !"
 
 
 @app.route('/')
@@ -57,9 +57,10 @@ def personnes_taille_dict():
     # On la capture et on renvoie un texte "personnel" (custom error handler) à l'utilisateur.
     # nom_personne = "OM"
     # nom_personne = "Gégé"
-    # nom_personne = "Hugo"
+    nom_personne = "Hugo"
 
     nom_personne = "Pignon"
+
 
     try:
         # Tout se passe normalement

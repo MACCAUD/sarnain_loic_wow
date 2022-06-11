@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `sarnain_loic_info1a_bd_164`
+-- Base de données :  `sarnain_loic_info1a_bd_164a`
 --
 
 -- --------------------------------------------------------
@@ -47,6 +47,27 @@ INSERT INTO `t_adresse` (`id_adresse`, `nom_adresse`) VALUES
 (1, 'grand-rue 15');
 
 -- --------------------------------------------------------
+
+--
+-- Structure de la table `t_fusil_nom`
+--
+
+CREATE TABLE `t_fusil_nom` (
+  `id_fusil_nom` int(11) NOT NULL,
+  `nom_fusil` varchar(60) NOT NULL,
+  `permis_fusil` varchar(20) NOT NULL,
+  `calibre_fusil` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `t_fusil_nom`
+--
+
+INSERT INTO `t_fusil_nom` (`id_fusil_nom`, `nom_fusil`, `permis_fusil`, `calibre_fusil`) VALUES
+(1, 'Carabine 2700', 'C', 22);
+
+-- --------------------------------------------------------
+
 
 --
 -- Structure de la table `t_mail`
@@ -162,6 +183,14 @@ ALTER TABLE `t_adresse`
   ADD PRIMARY KEY (`id_adresse`),
   ADD KEY `nom_adresse` (`nom_adresse`);
 
+
+--
+-- Index pour la table `t_fusil_nom`
+--
+ALTER TABLE `t_fusil_nom`
+  ADD PRIMARY KEY (`id_fusil_nom`);
+
+
 --
 -- Index pour la table `t_mail`
 --
@@ -233,6 +262,14 @@ ALTER TABLE `t_personne_avoir_adresse`
 --
 ALTER TABLE `t_personne_avoir_mail`
   MODIFY `id_personne_avoir_mail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+
+--
+-- AUTO_INCREMENT pour la table `t_fusil_nom`
+--
+ALTER TABLE `t_fusil_nom`
+  MODIFY `id_fusil_nom` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT pour la table `t_personne_avoir_telephone`
 --

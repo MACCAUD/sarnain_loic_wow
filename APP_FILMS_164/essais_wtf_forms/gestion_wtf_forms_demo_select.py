@@ -24,7 +24,7 @@ from APP_FILMS_164.essais_wtf_forms.wtf_forms_demo_select import DemoFormSelectW
     
     Paramètres : sans
     
-    But : Effacer(delete) un genre qui a été sélectionné dans le formulaire "genres_afficher.html"
+    But : Effacer(delete) un genre qui a été sélectionné dans le formulaire "fusil_afficher.html"
     
     Remarque :  Dans le champ "nom_genre_delete_wtf" du formulaire "genres/genre_delete_wtf.html",
                 le contrôle de la saisie est désactivée. On doit simplement cliquer sur "DELETE"
@@ -40,7 +40,7 @@ def demo_select_wtf():
         if request.method == "POST" and form_demo.submit_btn_ok_dplist_genre.data:
 
             if form_demo.submit_btn_ok_dplist_genre.data:
-                print("Genre sélectionné : ",
+                print("Mail sélectionné : ",
                       form_demo.genres_dropdown_wtf.data)
                 genre_selectionne = form_demo.genres_dropdown_wtf.data
                 form_demo.genres_dropdown_wtf.choices = session['genre_val_list_dropdown']
