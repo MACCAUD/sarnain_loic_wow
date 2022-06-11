@@ -1,5 +1,5 @@
 """Démonstration d'envoi d'une requête SQL à la BD
-Fichier : 2_test_connection_bd.py
+Fichier : 2_test_connection_bd.py nan
 Auteur : OM 2021.03.03
 """
 

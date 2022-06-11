@@ -1,6 +1,6 @@
 """Outils en rapport avec la base de données.
 
-Fichier : database_tools.py
+Fichier : database_tools.py nan
 Auteur : OM 2021.03.03
 Nécessite un fichier de configuration externe : ".env"
 Nécessite un fichier DUMP en MySql de la BD : /database/NOM_PRENOM_INFO1X_SUJET_164_2022.sql

@@ -2,7 +2,7 @@
     Fichier : 1_ImportationDumpSql.py
     Auteur : OM 2021.03.03 Connection par l'instanciation de la classe Toolsbd.
 
-    On obtient un objet "objet_dumpbd"
+    On obtient un objet "objet_dumpbd" nan
 
     Cela permet de construire la base de donnée à partir de votre fichier DUMP en SQL
     obtenu par l'exportation de votre bd dans PhpMyAdmin.
