@@ -23,3 +23,5 @@ except Exception as erreur:
           f"{__name__,erreur} , "
           f"{repr(erreur)}, "
           f"{type(erreur)}")
+
+    """nan"""
