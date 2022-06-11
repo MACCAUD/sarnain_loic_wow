@@ -24,4 +24,4 @@ except Exception as erreur:
           f"{repr(erreur)}, "
           f"{type(erreur)}")
 
-    """nan"""
+

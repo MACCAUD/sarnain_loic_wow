@@ -21,4 +21,3 @@ except Exception as erreur_load_dump_sql:
           f"{erreur_load_dump_sql}")
 
 
-    """nan"""
