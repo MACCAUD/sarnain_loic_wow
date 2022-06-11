@@ -18,9 +18,6 @@
                             Genre
                         </th>
                         <th class="align-middle">
-							Date insertion (pour exemple)
-                        </th>
-                        <th class="align-middle">
 
                         </th>
                         <th class="align-middle">
@@ -34,22 +31,19 @@
 				<tbody>
 					<tr>
 						<td class="align-middle">
-							{{ row.id_genre }}
+							{{ row.id_mail }}
 						</td>
 						<td class="align-middle">
-							{{ row.intitule_genre }}
-						</td>
-						<td class="align-middle">
-							{{ row.date_ins_genre }}
+							{{ row.nom_mail }}
 						</td>
 						<td class="text-center" class="align-middle">
 							<a class="btn btn-primary" href="{{ url_for('genres_ajouter_wtf') }}" role="button">Ajouter</a>
 						</td>
 						<td class="text-center" class="align-middle">
-							<a class="btn btn-warning" href="{{ url_for('genre_update_wtf', id_genre_btn_edit_html=row.id_genre) }}" role="button">Edit</a>
+							<a class="btn btn-warning" href="{{ url_for('genre_update_wtf', id_genre_btn_edit_html=row.id_mail) }}" role="button">Edit</a>
 						</td>
 						<td class="text-center" class="align-middle">
-							<a class="btn btn-danger" href="{{ url_for('genre_delete_wtf', id_genre_btn_delete_html=row.id_genre) }}" role="button">Delete</a>
+							<a class="btn btn-danger" href="{{ url_for('genre_delete_wtf', id_genre_btn_delete_html=row.id_mail) }}" role="button">Delete</a>
 						</td>
 					</tr>
 				</tbody>

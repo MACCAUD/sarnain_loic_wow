@@ -10,62 +10,38 @@
 			<table class="table table-responsive-sm">
 				{% if data_film_del %}
 				<thead>
-				<tr>
-					<th class="">
-						Id
-					</th>
-					<th class="">
-						Nom
-					</th>
-					<th class="">
-						Durée
-					</th>
-					<th class="">
-						Date de sortie
-					</th>
-					<th class="">
-						Description
-					</th>
-					<th class="">
-						Affiche
-					</th>
-				</tr>
+					<tr>
+						<th class="">
+							Id
+						</th>
+						<th class="">
+							Nom
+						</th>
+						<th class="">
+							Prenom
+						</th>
+					</tr>
 				</thead>
 				{% endif %}
 				{% for row in data_film_del %}
 				<tbody>
-				<tr>
-					<th class="align-middle">
-						{{ row.id_film }}
-					</th>
-					<th class="align-middle">
-						{{ row.nom_film }}
-					</th>
-					<th class="align-middle">
-						{{ row.duree_film|default("", True) }}
-					</th>
-					<th class="align-middle">
-						{{ row.date_sortie_film|default("", True) }}
-					</th>
-					<th class="align-middle">
-						{{ row.description_film|default("", True) }}
-					</th>
-					<th class="align-middle">
-						<img class="img" src={{ row.cover_link_film|default(None, True) }}
-							 style="border: 0;display:block; width:150px; max-height:auto;"
-							 alt="image masquée FFP8 (in COVID-19 Memory) (absente) mod 164">
-					</th>
-
-				<tr>
-
-				</tr>
-				</tr>
+					<tr>
+						<th class="align-middle">
+							{{ row.id_personne }}
+						</th>
+						<th class="align-middle">
+							{{ row.nom_personne }}
+						</th>
+						<th class="align-middle">
+							{{ row.prenom_personne }}
+						</th>
+					</tr>
 				</tbody>
 				{% else %}
 				<tbody>
-				<tr>
+					<tr>
 
-				</tr>
+					</tr>
 				</tbody>
 				{% endfor %}
 

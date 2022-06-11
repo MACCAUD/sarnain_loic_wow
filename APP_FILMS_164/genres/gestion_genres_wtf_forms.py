@@ -32,7 +32,7 @@ class FormWTFUpdateGenre(FlaskForm):
         Définition d'un "bouton" submit avec un libellé personnalisé.
     """
     nom_genre_update_regexp = "^([A-Z]|[a-zÀ-ÖØ-öø-ÿ])[A-Za-zÀ-ÖØ-öø-ÿ]*['\- ]?[A-Za-zÀ-ÖØ-öø-ÿ]+$"
-    nom_genre_update_wtf = StringField("Clavioter le genre ", validators=[Length(min=2, max=20, message="min 2 max 20"),
+    nom_genre_update_wtf = StringField("Clavioter le genre ", validators=[Length(min=2, max=200, message="min 2 max 200"),
                                                                           Regexp(nom_genre_update_regexp,
                                                                                  message="Pas de chiffres, de "
                                                                                          "caractères "
@@ -41,8 +41,8 @@ class FormWTFUpdateGenre(FlaskForm):
                                                                                          "apostrophe, de double trait "
                                                                                          "union")
                                                                           ])
-    date_genre_wtf_essai = DateField("Essai date", validators=[InputRequired("Date obligatoire"),
-                                                               DataRequired("Date non valide")])
+    date_genre_wtf_essai = DateField("Essai date")
+
     submit = SubmitField("Update genre")
 
 
